@@ -1,0 +1,773 @@
+┌──(krzysiek㉿Victus)-[~/Projects/777moneymaker]
+└─$ mvn compile exec:java -Dexec.mainClass=com.moneymaker.App | sed 's/\x1b\[[0-9;]*[a-zA-Z]//g' > result.log
+[com.moneymaker.App.main()] INFO com.moneymaker.App - Starting MoneyMaker bot in Simulation Mode...
+[com.moneymaker.App.main()] INFO com.moneymaker.client.BinanceWebSocketClient - Connecting to Binance WebSocket: wss://stream.binance.com:9443/ws/btcusdt@bookTicker
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Initializing Grid at Base Price: 76258.07000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76250.44 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76265.70 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76252.43000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76244.80 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76260.06 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 923.67 USDT / 0.001 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76250.44 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76248.00000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76240.38 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76255.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 847.35 USDT / 0.002 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76244.80 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76242.00000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76234.38 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76249.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 771.04 USDT / 0.003 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76240.38 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 694.73 USDT / 0.004 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76234.38 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76233.60000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76225.98 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76241.22 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76229.63000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76222.01 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76237.25 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76224.62000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76217.00 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76232.24 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 618.42 USDT / 0.005 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76225.98 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 542.12 USDT / 0.006 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76222.01 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76220.41000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76212.79 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76228.03 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 465.83 USDT / 0.007 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76217.00 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76216.00000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76208.38 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76223.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76209.98000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76202.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76217.60 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 389.54 USDT / 0.008 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76212.79 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76214.79000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76207.17 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76222.41 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 465.68 USDT / 0.007 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76217.60 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76218.71000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76211.09 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76226.33 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 541.83 USDT / 0.006 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76223.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 617.98 USDT / 0.005 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76222.41 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76224.62000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76217.00 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76232.24 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 694.13 USDT / 0.004 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76228.03 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 770.28 USDT / 0.003 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76226.33 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76229.62000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76222.00 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76237.24 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 846.44 USDT / 0.002 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76232.24 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 922.59 USDT / 0.001 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76232.24 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76233.60000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76225.98 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76241.22 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 998.75 USDT / 0.000 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76237.25 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 1074.91 USDT / -0.001 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76237.24 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76237.98000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76230.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76245.60 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 1151.08 USDT / -0.002 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76241.22 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 1227.24 USDT / -0.003 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76241.22 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76241.99000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76234.37 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76249.61 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76236.00000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76228.38 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76243.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 1150.93 USDT / -0.002 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76234.37 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 1074.63 USDT / -0.001 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76230.36 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 998.32 USDT / 0.000 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76228.38 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76226.59000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76218.97 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76234.21 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 922.02 USDT / 0.001 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76225.98 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76215.62000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76208.00 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76223.24 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 845.72 USDT / 0.002 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76222.00 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 769.43 USDT / 0.003 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76218.97 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 693.13 USDT / 0.004 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76217.00 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 616.85 USDT / 0.005 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76211.09 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76211.07000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76203.45 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76218.69 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76217.48000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76209.86 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76225.10 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0762 | New Balance: 540.56 USDT / 0.006 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76209.86 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76208.48000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76200.86 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76216.10 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 616.70 USDT / 0.005 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76216.10 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76216.11000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76208.49 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76223.73 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 692.84 USDT / 0.004 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76218.69 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76220.31000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76212.69 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76227.93 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 768.99 USDT / 0.003 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76223.24 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 845.14 USDT / 0.002 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76225.10 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 921.28 USDT / 0.001 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76223.73 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76226.59000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76218.97 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76234.21 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 997.44 USDT / 0.000 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76227.93 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76233.90000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76226.28 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76241.52 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 1073.59 USDT / -0.001 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76234.21 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 1149.75 USDT / -0.002 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76234.21 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 1225.92 USDT / -0.003 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76243.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 1302.09 USDT / -0.004 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76241.52 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76244.31000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76236.69 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76251.93 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 1378.25 USDT / -0.005 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76245.60 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 1454.43 USDT / -0.006 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76249.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0762 | New Balance: 1530.60 USDT / -0.007 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76249.61 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76250.05000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76242.42 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76257.68 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 1606.78 USDT / -0.008 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76251.93 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76253.88000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76246.25 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76261.51 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 1682.96 USDT / -0.009 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76255.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 1759.14 USDT / -0.010 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76257.68 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76259.67000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76252.04 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76267.30 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 1835.32 USDT / -0.011 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76260.06 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 1911.51 USDT / -0.012 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76261.51 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 1987.70 USDT / -0.013 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76265.70 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76266.66000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76259.03 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76274.29 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2063.89 USDT / -0.014 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76267.30 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76261.99000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76254.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76269.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76266.66000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76259.03 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76274.29 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2140.08 USDT / -0.015 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76269.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76273.33000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76265.70 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76280.96 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2216.28 USDT / -0.016 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76274.29 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2292.48 USDT / -0.017 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76274.29 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76277.40000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76269.77 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76285.03 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2216.13 USDT / -0.016 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76269.77 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76268.60000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76260.97 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76276.23 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2139.79 USDT / -0.015 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76265.70 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76261.99000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76254.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76269.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76266.40000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76258.77 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76274.03 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2215.98 USDT / -0.016 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76269.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2292.18 USDT / -0.017 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76276.23 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2368.38 USDT / -0.018 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76274.03 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76277.42000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76269.79 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76285.05 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2444.58 USDT / -0.019 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76280.96 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76283.24000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76275.61 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76290.87 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2520.79 USDT / -0.020 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76285.03 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2597.00 USDT / -0.021 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76285.05 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76287.75000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76280.12 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76295.38 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2673.22 USDT / -0.022 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76290.87 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76291.62000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76283.99 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76299.25 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2749.44 USDT / -0.023 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76295.38 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2825.66 USDT / -0.024 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76299.25 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76299.67000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76292.04 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76307.30 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76294.39000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76286.76 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76302.02 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2749.29 USDT / -0.023 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76292.04 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76301.99000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76294.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76309.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2825.52 USDT / -0.024 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76302.02 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76306.29000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76298.66 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76313.92 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2901.75 USDT / -0.025 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76307.30 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2977.98 USDT / -0.026 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76309.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76310.81000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76303.18 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76318.44 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3054.22 USDT / -0.027 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76313.92 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76315.40000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76307.77 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76323.03 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3130.46 USDT / -0.028 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76318.44 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76320.00000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76312.37 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76327.63 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3206.71 USDT / -0.029 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76323.03 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76324.45000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76316.82 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76332.08 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3282.96 USDT / -0.030 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76327.63 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76328.35000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76320.72 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76335.98 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3206.56 USDT / -0.029 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76320.72 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76319.20000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76311.57 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76326.83 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3130.17 USDT / -0.028 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76316.82 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76312.22000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76304.59 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76319.85 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3053.78 USDT / -0.027 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76312.37 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2977.39 USDT / -0.026 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76311.57 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2901.01 USDT / -0.025 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76303.18 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2824.63 USDT / -0.024 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76307.77 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2748.25 USDT / -0.023 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76304.59 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76301.99000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76294.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76309.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2824.48 USDT / -0.024 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76309.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76309.62000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76301.99 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76317.25 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76305.79000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76298.16 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76313.42 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76309.62000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76301.99 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76317.25 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2900.72 USDT / -0.025 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76317.25 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2976.96 USDT / -0.026 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76313.42 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3053.20 USDT / -0.027 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76317.25 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76317.26000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76309.63 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76324.89 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3129.44 USDT / -0.028 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76319.85 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76321.26000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76313.63 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76328.89 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3205.69 USDT / -0.029 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76326.83 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3281.94 USDT / -0.030 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76324.89 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76327.01000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76319.38 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76334.64 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3358.19 USDT / -0.031 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76328.89 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76331.37000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76323.74 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76339.00 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76322.99000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76315.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76330.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3281.79 USDT / -0.030 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76323.74 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3205.40 USDT / -0.029 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76319.38 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76317.41000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76309.78 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76325.04 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76322.03000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76314.40 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76329.66 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3281.65 USDT / -0.030 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76325.04 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76328.55000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76320.92 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76336.18 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3357.90 USDT / -0.031 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76330.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3434.15 USDT / -0.032 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76329.66 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76322.97000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76315.34 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76330.60 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3357.76 USDT / -0.031 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76320.92 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76317.46000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76309.83 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76325.09 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76311.83000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76304.20 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76319.46 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3281.37 USDT / -0.030 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76315.36 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3204.98 USDT / -0.029 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76314.40 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3128.58 USDT / -0.028 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76315.34 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3052.19 USDT / -0.027 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76313.63 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76301.24000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76293.61 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76308.87 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2975.81 USDT / -0.026 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76309.63 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2899.42 USDT / -0.025 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76309.78 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2823.04 USDT / -0.024 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76309.83 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2746.65 USDT / -0.023 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76304.20 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2670.28 USDT / -0.022 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76301.99 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2593.90 USDT / -0.021 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76301.99 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2517.52 USDT / -0.020 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76298.66 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2441.15 USDT / -0.019 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76298.16 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76293.60000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76285.97 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76301.23 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2364.78 USDT / -0.018 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76294.36 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2288.41 USDT / -0.017 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76294.36 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2212.04 USDT / -0.016 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76293.61 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2288.26 USDT / -0.017 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76301.23 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76303.31000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76295.68 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76310.94 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76307.21000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76299.58 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76314.84 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2364.50 USDT / -0.018 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76308.87 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2440.73 USDT / -0.019 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76310.94 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2516.97 USDT / -0.020 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76314.84 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76319.15000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76311.52 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76326.78 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76311.52000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76303.89 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76319.15 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2440.58 USDT / -0.019 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76311.52 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76307.09000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76299.46 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76314.72 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2364.20 USDT / -0.018 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76303.89 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76302.75000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76295.12 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76310.38 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2287.83 USDT / -0.017 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76295.68 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2211.45 USDT / -0.016 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76299.58 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2135.08 USDT / -0.015 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76299.46 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 2058.71 USDT / -0.014 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76295.12 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76293.36000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76285.73 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76300.99 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76297.83000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76290.20 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76305.46 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2134.93 USDT / -0.015 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76300.99 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2211.16 USDT / -0.016 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76305.46 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76308.08000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76300.45 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76315.71 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2287.39 USDT / -0.017 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76310.38 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76312.11000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76304.48 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76319.74 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2363.63 USDT / -0.018 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76314.72 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2439.87 USDT / -0.019 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76315.71 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76316.39000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76308.76 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76324.02 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2516.11 USDT / -0.020 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76319.15 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2592.36 USDT / -0.021 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76319.46 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2668.60 USDT / -0.022 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76319.74 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76322.06000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76314.43 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76329.69 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2744.85 USDT / -0.023 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76324.02 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2821.10 USDT / -0.024 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76325.09 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2897.35 USDT / -0.025 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76326.78 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76326.79000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76319.16 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76334.42 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 2973.60 USDT / -0.026 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76329.69 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3049.85 USDT / -0.027 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76330.60 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76331.37000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76323.74 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76339.00 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3126.11 USDT / -0.028 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76332.08 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3202.37 USDT / -0.029 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76334.42 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3278.63 USDT / -0.030 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76334.64 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76335.43000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76327.80 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76343.06 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3354.89 USDT / -0.031 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76335.98 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3431.15 USDT / -0.032 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76336.18 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3507.41 USDT / -0.033 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76339.00 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3583.67 USDT / -0.034 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76339.00 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76340.99000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76333.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76348.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3659.94 USDT / -0.035 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76343.06 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76345.84000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76338.21 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76353.47 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3736.21 USDT / -0.036 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76348.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76350.12000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76342.48 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76357.76 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3812.49 USDT / -0.037 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76353.47 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76354.00000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76346.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76361.64 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3888.77 USDT / -0.038 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76357.76 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76357.99000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76350.35 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76365.63 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3965.05 USDT / -0.039 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76361.64 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76362.00000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76354.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76369.64 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4041.34 USDT / -0.040 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76365.63 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76366.00000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76358.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76373.64 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4117.64 USDT / -0.041 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76369.64 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76369.93000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76362.29 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76377.57 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76364.43000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76356.79 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76372.07 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 4041.20 USDT / -0.040 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76362.29 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 3964.76 USDT / -0.039 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76358.36 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 3888.33 USDT / -0.038 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76356.79 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76354.54000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76346.90 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76362.18 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 3811.90 USDT / -0.037 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76354.36 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3735.48 USDT / -0.036 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76346.36 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 3659.05 USDT / -0.035 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76350.35 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3582.63 USDT / -0.034 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76346.90 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76345.84000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76338.21 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76353.47 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3658.90 USDT / -0.035 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76353.47 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76353.90000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76346.26 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76361.54 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76357.81000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76350.17 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76365.45 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3735.19 USDT / -0.036 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76362.18 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3811.48 USDT / -0.037 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76361.54 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76362.89000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76355.25 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76370.53 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76357.26000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76349.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76364.90 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 3735.04 USDT / -0.036 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76355.25 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3658.62 USDT / -0.035 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76346.26 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 3582.19 USDT / -0.034 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76350.17 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3505.77 USDT / -0.033 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76349.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76345.84000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76338.21 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76353.47 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3582.05 USDT / -0.034 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76353.47 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76354.19000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76346.55 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76361.83 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76349.25000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76341.62 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76356.88 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3505.62 USDT / -0.033 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76346.55 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76344.14000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76336.51 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76351.77 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3429.20 USDT / -0.032 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76342.48 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3352.79 USDT / -0.031 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76341.62 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3276.37 USDT / -0.030 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76338.21 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3199.96 USDT / -0.029 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76338.21 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3123.54 USDT / -0.028 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76338.21 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0763 | New Balance: 3047.13 USDT / -0.027 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76336.51 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76336.00000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76328.37 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76343.63 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0763 | New Balance: 3123.40 USDT / -0.028 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76343.63 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76345.84000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76338.21 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76353.47 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76350.66000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76343.02 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76358.30 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3199.67 USDT / -0.029 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76351.77 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3275.95 USDT / -0.030 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76356.88 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3352.23 USDT / -0.031 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76353.47 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76357.25000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76349.61 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76364.89 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3428.52 USDT / -0.032 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76361.83 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3504.80 USDT / -0.033 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76358.30 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76362.89000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76355.25 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76370.53 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3581.09 USDT / -0.034 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76365.45 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3657.38 USDT / -0.035 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76364.90 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3733.66 USDT / -0.036 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76364.89 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76367.71000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76360.07 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76375.35 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3809.96 USDT / -0.037 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76370.53 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3886.25 USDT / -0.038 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76370.53 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76371.70000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76364.06 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76379.34 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3962.55 USDT / -0.039 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76373.64 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4038.84 USDT / -0.040 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76372.07 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4115.15 USDT / -0.041 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76377.57 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4191.45 USDT / -0.042 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76375.35 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4267.75 USDT / -0.043 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76379.34 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76382.56000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76374.92 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76390.20 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76388.87000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76381.23 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76396.51 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76384.11000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76376.47 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76391.75 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76379.82000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76372.18 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76387.46 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 4191.29 USDT / -0.042 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76381.23 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76374.45000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76366.81 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76382.09 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 4114.84 USDT / -0.041 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76376.47 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 4038.39 USDT / -0.040 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76374.92 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 3961.94 USDT / -0.039 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76372.18 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76364.33000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76356.69 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76371.97 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: BUY | Fee: 0.0764 | New Balance: 3885.49 USDT / -0.038 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76366.81 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76368.37000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76360.73 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76376.01 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 3961.79 USDT / -0.039 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76371.97 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4038.09 USDT / -0.040 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76376.01 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76376.01000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76368.37 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76383.65 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4114.40 USDT / -0.041 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76382.09 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76382.61000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76374.97 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76390.25 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4190.71 USDT / -0.042 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76387.46 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4267.01 USDT / -0.043 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76383.65 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76388.87000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76381.23 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76396.51 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4343.33 USDT / -0.044 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76390.20 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4419.64 USDT / -0.045 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76391.75 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order FILLED: SELL | Fee: 0.0764 | New Balance: 4495.96 USDT / -0.046 Asset
+[HttpClient-1-Worker-0] INFO com.moneymaker.App - TRADING UPDATE: Trade filled at 76390.25 for BTCUSDT
+[HttpClient-1-Worker-0] INFO com.moneymaker.strategy.GridStrategy - Price moved significantly. Re-adjusting grid. New Base: 76394.00000000
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: BUY BTCUSDT at 76386.36 (Amount: 0.001)
+[HttpClient-1-Worker-0] INFO com.moneymaker.simulation.PaperExchange - Order Placed: SELL BTCUSDT at 76401.64 (Amount: 0.001)
+[com.moneymaker.App.main()] INFO com.moneymaker.App - Final Balance: 4495.95682972 USDT / -0.046 Asset
+[com.moneymaker.App.main()] INFO com.moneymaker.App - Shutting down bot.
+[HttpClient-1-Worker-0] ERROR com.moneymaker.client.BinanceWebSocketClient - WebSocket error
+java.io.IOException: connection closed locally
+        at java.net.http/jdk.internal.net.http.SocketTube.signalClosed(SocketTube.java:159)
+        at java.net.http/jdk.internal.net.http.PlainHttpConnection.close(PlainHttpConnection.java:428)
+        at java.net.http/jdk.internal.net.http.PlainHttpConnection.close(PlainHttpConnection.java:406)
+        at java.net.http/jdk.internal.net.http.HttpClientImpl.closeConnection(HttpClientImpl.java:609)
+        at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+        at java.net.http/jdk.internal.net.http.HttpClientImpl.stop(HttpClientImpl.java:548)
+        at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.shutdown(HttpClientImpl.java:1249)
+        at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1451)
