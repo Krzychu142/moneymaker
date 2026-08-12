@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyMaker - Techniczna Analiza Bota</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700;900&family=Quicksand:wght@400;500;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: #f4f4f9;
+            display: grid;
+            gap: 40px;
+            grid-template-columns: 1fr;
+            min-height: 100vh;
+            padding: 40px 0;
+            place-items: center;
+        }
+
+        /* GŁÓWNY KONTENER SLAJDU */
+        .slide-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(72, 72, 140, 0.15);
+            display: flex;
+            flex-direction: column;
+            font-family: 'Quicksand', sans-serif;
+            height: 720px;
+            width: 1280px;
+            padding: 60px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-container::after {
+            background: linear-gradient(90deg, transparent, #48488c, transparent);
+            bottom: 40px;
+            content: '';
+            height: 3px;
+            left: 80px;
+            position: absolute;
+            right: 80px;
+            opacity: 0.2;
+        }
+
+        /* TYPOGRAFIA */
+        h1, h2, h3, h4 { font-family: 'League Spartan', sans-serif; color: #222; font-weight: 700; }
+        span.accent { color: #48488c; }
+        p, li, td { color: #444; font-size: 22px; font-weight: 500; line-height: 1.6; margin-bottom: 15px; }
+        
+        .slide-title { 
+            font-size: 56px; 
+            margin-bottom: 30px; 
+            border-left: 8px solid #48488c; 
+            padding-left: 20px; 
+        }
+
+        code { 
+            font-family: 'JetBrains Mono', monospace; 
+            color: #48488c; 
+            background: #eef; 
+            padding: 4px 8px; 
+            border-radius: 6px; 
+            font-weight: 700; 
+            font-size: 0.9em;
+        }
+
+        /* UKŁADY */
+        .content-area { display: flex; flex-direction: column; flex-grow: 1; justify-content: flex-start; }
+        
+        /* Listy */
+        .bullet-list { list-style: none; padding-left: 10px; margin-top: 20px; }
+        .bullet-list li { margin-bottom: 25px; padding-left: 50px; position: relative; }
+        .bullet-list li i { position: absolute; left: 0; top: 5px; color: #48488c; font-size: 24px; }
+        .bullet-list li strong { font-weight: 800; color: #222; }
+
+        /* Slajdy tekstowe z teorią */
+        .text-heavy-layout p { font-size: 26px; line-height: 1.7; margin-bottom: 25px; }
+        
+        /* Dedykowany slajd na Screen */
+        .screen-slide {
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px;
+        }
+        .screen-slide h2 { font-size: 42px; margin-bottom: 20px; text-align: center; border: none; padding: 0; }
+        .screen-wrapper {
+            width: 100%;
+            height: 560px; /* Maksymalna wysokość na obraz */
+            border: 4px solid #48488c;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(72, 72, 140, 0.2);
+            overflow: hidden;
+            background: #fcfcfc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .screen-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Obraz zachowa proporcje i nie zostanie ucięty */
+        }
+
+        /* Inne elementy */
+        .tiled-content { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 20px; }
+        .tile { background: #fafafa; padding: 40px; border-radius: 16px; border: 2px solid #eee; }
+        .tile i { font-size: 48px; color: #48488c; margin-bottom: 25px; display: block; }
+        
+    </style>
+</head>
+<body>
+
+<div class="slide-container" id="slide1">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; text-align: center;">
+        <h1 style="font-size: 90px; margin-bottom: 20px;">MoneyMaker <span class="accent">Bot</span></h1>
+        <h2 style="font-size: 40px; font-weight: 500; color: #666;">High-Frequency Grid Trading</h2>
+        <p style="font-size: 24px; margin-top: 40px; max-width: 800px;">Zautomatyzowana, asynchroniczna strategia handlowa zaprojektowana do maksymalizacji zysków z rynkowej zmienności w środowisku Java 21.</p>
+    </div>
+</div>
+
+<div class="slide-container" id="slide2">
+    <h2 class="slide-title">Teoria: Czym jest <span class="accent">Grid Trading</span>?</h2>
+    <div class="content-area text-heavy-layout">
+        <p><strong>Grid Trading</strong> to strategia ilościowa, która polega na wystawianiu serii zleceń kupna i sprzedaży w regularnych, z góry ustalonych odstępach cenowych (tworząc tzw. siatkę).</p>
+        <p>Głównym założeniem tej metody jest <strong>brak konieczności przewidywania kierunku rynku</strong>. Bot z góry zakłada, że cena będzie oscylować w górę i w dół.</p>
+        <ul class="bullet-list">
+            <li><i class="fas fa-arrow-trend-down"></i> <strong>Spadki to okazja:</strong> Każdy spadek ceny o określoną wartość (np. 0.5%) aktywuje zlecenie kupna (akumulacja aktywa).</li>
+            <li><i class="fas fa-arrow-trend-up"></i> <strong>Wzrosty to zysk:</strong> Każdy wzrost o tę samą wartość aktywuje zlecenie sprzedaży wcześniej kupionego aktywa z realizacją marży.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="slide-container" id="slide3">
+    <h2 class="slide-title">Innowacja: <span class="accent">Perpetual Grid</span></h2>
+    <div class="content-area text-heavy-layout">
+        <p>Klasyczny Grid Trading cierpi na jedną wadę: jeśli cena drastycznie wzrośnie lub spadnie poza ustalone widełki, bot "zamraża" środki i przestaje handlować. <strong>MoneyMaker rozwiązuje ten problem.</strong></p>
+        <p>Wdrożyliśmy mechanizm <strong>Perpetual Grid</strong>. Nasz algorytm dynamicznie przesuwa bazę odniesienia (<code>Base Price</code>) w ślad za dominującym trendem rynkowym.</p>
+        <p>Jeśli cena kryptowaluty zacznie gwałtownie uciekać w górę, bot automatycznie <strong>"goni" ją</strong>, przestawiając całą siatkę zleceń wyżej. Dzięki temu algorytm zawsze znajduje się w centrum akcji i generuje zyski, niezależnie od tego, czy rynek pnie się do góry na przestrzeni dni, czy miesięcy.</p>
+    </div>
+</div>
+
+<div class="slide-container" id="slide4">
+    <h2 class="slide-title">Stack <span class="accent">Technologiczny</span></h2>
+    <div class="content-area">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-top: 10px;">
+            
+            <div style="background: #fafafa; padding: 30px; border-radius: 16px; border: 2px solid #eee; display: flex; gap: 25px; align-items: flex-start;">
+                <i class="fab fa-java" style="font-size: 42px; color: #48488c; margin-top: 5px;"></i>
+                <div>
+                    <h3 style="margin-bottom: 10px; font-size: 26px;">Java 21 & Wątki V.</h3>
+                    <p style="font-size: 19px; margin-bottom: 0;">Wykorzystanie najnowszego środowiska wykonawczego. Architektura gotowa na równoległą obsługę tysięcy par walutowych bez blokowania procesora.</p>
+                </div>
+            </div>
+
+            <div style="background: #fafafa; padding: 30px; border-radius: 16px; border: 2px solid #eee; display: flex; gap: 25px; align-items: flex-start;">
+                <i class="fas fa-bolt" style="font-size: 42px; color: #48488c; margin-top: 5px;"></i>
+                <div>
+                    <h3 style="margin-bottom: 10px; font-size: 26px;">WebSockets (NIO)</h3>
+                    <p style="font-size: 19px; margin-bottom: 0;">Użycie <code>java.net.http.WebSocket</code>. Bot reaguje natychmiast, asynchronicznie odbierając strumień danych z giełdy bez odpytywania API.</p>
+                </div>
+            </div>
+
+            <div style="background: #fafafa; padding: 30px; border-radius: 16px; border: 2px solid #eee; display: flex; gap: 25px; align-items: flex-start;">
+                <i class="fas fa-calculator" style="font-size: 42px; color: #48488c; margin-top: 5px;"></i>
+                <div>
+                    <h3 style="margin-bottom: 10px; font-size: 26px;">BigDecimal</h3>
+                    <p style="font-size: 19px; margin-bottom: 0;">W tradingu nie ma miejsca na przybliżenia. Odrzucenie <code>double/float</code> eliminuje groźne błędy zaokrągleń w obliczeniach finansowych.</p>
+                </div>
+            </div>
+
+            <div style="background: #fafafa; padding: 30px; border-radius: 16px; border: 2px solid #eee; display: flex; gap: 25px; align-items: flex-start;">
+                <i class="fas fa-terminal" style="font-size: 42px; color: #48488c; margin-top: 5px;"></i>
+                <div>
+                    <h3 style="margin-bottom: 10px; font-size: 26px;">Logback / SLF4J</h3>
+                    <p style="font-size: 19px; margin-bottom: 0;">Profesjonalny, ustandaryzowany system logowania zdarzeń, gwarantujący pełną ścieżkę audytową każdej transakcji algorytmu.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide5">
+    <h2 class="slide-title">Architektura: <span class="accent">PaperExchange</span></h2>
+    <div class="content-area text-heavy-layout">
+        <p>System testowy bota (tzw. Paper Trading) został zaprojektowany z naciskiem na maksymalny realizm. Zdecydowaliśmy się nie zakłamywać wyników i <strong>uwzględniać realne prowizje giełdowe</strong> w każdej transakcji.</p>
+        <ul class="bullet-list">
+            <li><i class="fas fa-search-dollar"></i> <strong>Koszty transakcyjne:</strong> W metodzie <code>fillOrder</code> każda symulowana transakcja ma precyzyjnie odjętą prowizję rzędu 0.1% (standard giełdy Binance).</li>
+            <li><i class="fas fa-code"></i> <strong>Bezpieczeństwo operacji:</strong> Wyliczenia prowizji oraz aktualizacja salda odbywają się wyłącznie przy użyciu obiektów <code>BigDecimal</code>, z uwzględnieniem precyzyjnego skalowania matematycznego (RoundingMode).</li>
+        </ul>
+        <p style="margin-top: 30px; font-style: italic; color: #48488c;">Na następnym slajdzie: Fragment kodu odpowiadający za potrącanie prowizji.</p>
+    </div>
+</div>
+
+<div class="slide-container screen-slide" id="slide6">
+    <h2><span class="accent">PaperExchange.java</span> - Metoda fillOrder()</h2>
+    <div class="screen-wrapper">
+        <img src="screen1.png" alt="Zrzut ekranu kodu PaperExchange">
+    </div>
+</div>
+
+<div class="slide-container" id="slide7">
+    <h2 class="slide-title">Mózg Operacji: <span class="accent">GridStrategy</span></h2>
+    <div class="content-area text-heavy-layout">
+        <p>Klasa <code>GridStrategy</code> odpowiada za analizę i interpretację przychodzących sygnałów z WebSocketa. To tutaj bot podejmuje decyzję o tym, czy ruch cenowy jest na tyle istotny, aby podjąć akcję handlową.</p>
+        <ul class="bullet-list">
+            <li><i class="fas fa-brain"></i> <strong>Logika decyzyjna:</strong> Kluczowy warunek <code>priceMove.compareTo(gridSize) >= 0</code> sprawdza, czy bezwzględna zmiana ceny przekroczyła ustalony rozmiar siatki (np. 0.5%).</li>
+            <li><i class="fas fa-cogs"></i> <strong>Przebudowa siatki:</strong> Gdy warunek jest spełniony, bot decyduje, czy zrealizować zlecenie kupna czy sprzedaży, a następnie ustawia nowy punkt odniesienia (Base Price), realizując założenia strategii Perpetual Grid.</li>
+        </ul>
+        <p style="margin-top: 30px; font-style: italic; color: #48488c;">Na następnym slajdzie: Główny mechanizm analizy ruchu ceny.</p>
+    </div>
+</div>
+
+<div class="slide-container screen-slide" id="slide8">
+    <h2><span class="accent">GridStrategy.java</span> - Metoda processUpdate()</h2>
+    <div class="screen-wrapper">
+        <img src="screen2.png" alt="Zrzut ekranu kodu GridStrategy">
+    </div>
+</div>
+
+<div class="slide-container" id="slide9">
+    <h2 class="slide-title">Sesja Demo: <span class="accent">Analiza Logów</span></h2>
+    <div class="content-area text-heavy-layout">
+        <p>Podczas krótkiej sesji demonstracyjnej uruchomiliśmy bota z kapitałem początkowym <strong>1000 USDT</strong>. Wyniki pokazują, jak algorytm radzi sobie w warunkach gwałtownych ruchów (tzw. flash-crash / pompa).</p>
+        <ul class="bullet-list">
+            <li><i class="fas fa-anchor"></i> <strong>Start:</strong> Inicjalizacja siatki (Base Price: 76258.07). Bot zakotwiczył się i zaczął nasłuchiwać.</li>
+            <li><i class="fas fa-shopping-cart"></i> <strong>Faza akumulacji:</strong> W logach widać powtarzające się zdarzenie <code>Order FILLED: BUY</code>. Cena spadała, a bot posłusznie kupował taniej, budując pozycję.</li>
+            <li><i class="fas fa-rocket"></i> <strong>Kulminacja i Zysk:</strong> Gwałtowny wzrost ceny uaktywnił serię <code>Order FILLED: SELL</code>. Bot zaczął dynamicznie wyprzedawać zakumulowane aktywa, inkasując wysoką marżę.</li>
+        </ul>
+        <p style="margin-top: 30px; font-style: italic; color: #48488c;">Na następnym slajdzie: Logi systemowe z podsumowaniem spektakularnego zysku.</p>
+    </div>
+</div>
+
+<div class="slide-container screen-slide" id="slide10">
+    <h2><span class="accent">result.log</span> - Podsumowanie Transakcji</h2>
+    <div class="screen-wrapper">
+        <img src="screen3.png" alt="Zrzut ekranu pliku result.log">
+    </div>
+</div>
+
+<div class="slide-container" id="slide11">
+    <h2 class="slide-title">Ekstremalny <span class="accent">Wynik Finansowy</span></h2>
+    <div class="content-area text-heavy-layout" style="align-items: center; text-align: center; justify-content: center;">
+        <h3 style="font-size: 100px; color: #48488c; margin-bottom: 20px;">4495.95 USDT</h3>
+        <p style="font-size: 32px;">Oznacza to zysk netto (po odliczeniu setek prowizji) na poziomie <strong>ponad 3400 dolarów</strong>.</p>
+        
+        <div style="background: #fafafa; border: 2px solid #ddd; padding: 30px; border-radius: 12px; margin-top: 30px; text-align: left; width: 80%;">
+            <p><strong>Zrozumienie salda aktywów (Asset: -0.046 BTC):</strong></p>
+            <p style="font-size: 20px; line-height: 1.5; margin-bottom: 0;">Ujemne saldo zasobu pokazuje potęgę algorytmu. Bot wszedł w tzw. "shorta" – sprzedał więcej, niż kupił w początkowej fazie. Wykorzystał gwałtowny skok ceny jako sygnał do zrzutu i obstawiania kontynuacji trendu, realizując przy tym gigantyczny przychód w gotówce.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide12">
+    <h2 class="slide-title">Co Dalej? <span class="accent">Plany Rozwoju</span></h2>
+    <div class="content-area text-heavy-layout">
+        <p>Projekt jest architektonicznie przygotowany na wdrożenie na prawdziwe rynki. Następne kroki to:</p>
+        <ul class="bullet-list">
+            <li><i class="fas fa-plug"></i> <strong>Real-Money Test (API):</strong> Dzięki wykorzystaniu interfejsów w Javie, kod jest gotowy na przejście z <code>PaperExchange</code> na <code>BinanceExchange</code>. Wystarczy podpiąć produkcyjne klucze API.</li>
+            <li><i class="fas fa-layer-group"></i> <strong>Pełna współbieżność:</strong> Wykorzystanie wątków wirtualnych do równoległego uruchomienia tysięcy instancji bota dla wszystkich dostępnych par walutowych (np. ETH/USDT, SOL/USDT) na pojedynczej maszynie VPS.</li>
+            <li><i class="fas fa-brain"></i> <strong>Machine Learning:</strong> Planujemy zastąpić statyczny rozmiar siatki (<code>gridSize</code>) modelem uczenia maszynowego, który będzie analizował historyczną zmienność (Volatility) w czasie rzeczywistym i optymalizował rozstawienie zleceń.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

@@ -19,7 +19,7 @@ import java.util.concurrent.CompletionStage;
 public class BinanceWebSocketClient {
     private static final Logger log = LoggerFactory.getLogger(BinanceWebSocketClient.class);
     private static final String BINANCE_WS_URL = "wss://stream.binance.com:9443/ws/%s@bookTicker";
-    
+
     private final ObjectMapper objectMapper = new ObjectMapper();
     private final String symbol;
     private final MarketDataListener listener;
@@ -34,8 +34,8 @@ public class BinanceWebSocketClient {
         log.info("Connecting to Binance WebSocket: {}", url);
 
         HttpClient.newHttpClient()
-            .newWebSocketBuilder()
-            .buildAsync(URI.create(url), new BinanceWebSocketListener());
+                .newWebSocketBuilder()
+                .buildAsync(URI.create(url), new BinanceWebSocketListener());
     }
 
     private class BinanceWebSocketListener implements WebSocket.Listener {
@@ -54,13 +54,13 @@ public class BinanceWebSocketClient {
         private void processMessage(String message) {
             try {
                 JsonNode node = objectMapper.readTree(message);
-                
+
                 // Fields from Binance bookTicker:
                 // "s": symbol, "b": best bid price, "a": best ask price
                 PriceUpdate update = new PriceUpdate(
-                    node.get("s").asText(),
-                    new BigDecimal(node.get("b").asText()),
-                    new BigDecimal(node.get("a").asText())
+                        node.get("s").asText(),
+                        new BigDecimal(node.get("b").asText()),
+                        new BigDecimal(node.get("a").asText())
                 );
 
                 listener.accept(update);

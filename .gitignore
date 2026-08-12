@@ -17,3 +17,6 @@ out/
 .classpath
 .project
 .factorypath
+
+# config
+RESUME.md

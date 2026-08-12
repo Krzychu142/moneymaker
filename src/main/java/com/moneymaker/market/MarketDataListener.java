@@ -1,6 +1,7 @@
 package com.moneymaker.market;
 
 import com.moneymaker.model.PriceUpdate;
+
 import java.util.function.Consumer;
 
 /**
